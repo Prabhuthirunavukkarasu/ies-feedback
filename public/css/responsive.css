@@ -1,0 +1,266 @@
+@media (max-width: 576px) {
+     .breadcrumb{
+         display: none;
+    }
+     #main-container {
+         margin-top: 0;
+    }
+     #header-navbar.mainmenu {
+         margin: 0rem;
+    }
+     section.content {
+         padding: 0.6rem;
+    }
+    /** Main Menu **/
+     .navbar-brand img {
+         max-height: 1.8rem;
+    }
+     .navbar-brand{
+         margin-right: 0.2rem;
+    }
+     .mainmenu .nav-header .btn-link {
+         margin-left: 0.65rem;
+    }
+    .mainmenu .user-icon{
+        vertical-align: bottom;
+    }
+    .mainmenu .navbar-nav li > a.active::before, .mainmenu .navbar-nav li > div.dropdown > a.active::before, .mainmenu .navbar-nav li > a:hover::before, .mainmenu .navbar-nav li > div.dropdown > a:hover::before, .mainmenu .navbar-nav li .dropdown.show a.dropdown-toggle::before, .megamenu-collapse .navbar-nav li > div.dropdown:hover > a::before{
+        display: none;
+    }
+    .nav-header .btn-link.navbar-toggler {
+        vertical-align: bottom;
+    }
+    /** Main Menu End **/
+     .element-wrapper .element-title {
+         font-size: 1.07rem;
+    }
+     #page-container{
+         padding: 0;
+    }
+
+    /** Table **/
+    .filter-rule {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 0.55rem 2.5rem 0.55rem 0.4rem;
+    }
+    .filter-rule .rules, .filter-rule .rules-pill{
+        display: block;
+        margin: 5px 0px;
+        max-width: 90%;
+        font-size: 0.75rem;
+    }
+    .filter-rule .rules-pill{
+        font-size: 0.70rem;
+    }
+    .filter-rule span.close-icon {
+        right: 15px;
+        top: 12px;
+    }
+    .filter-btn-group select.custom-select, .filter-btn-group input.form-control, .filter-btn-group button.btn{
+        display: block;
+        width: 100%;
+        margin: 3px 0px;
+    }
+    .filter-action.input-group select.custom-select{
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    } 
+    .filter-title.d-flex{
+        display: block !important;
+    }
+    .filter-title.d-flex .align-items-end{
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 767px) {
+     .nav.nav-pills{
+         padding-right: 25px;
+    }
+
+     /** Login page **/
+    .login-card-layout{
+      position: static;
+      height: 100%;
+    }
+    .login-bg>.row>.col{
+        padding: 0;
+    }
+    .login-card .form-group {
+        width: 95%;
+    }
+    .login-card-layout h1 {
+        font-size: 1.6rem;
+    }
+    .login-card-layout p {
+        font-size: 0.9rem;
+    }
+    .login-card-layout .carousel-indicators {
+        bottom: 20px;
+    }
+    .login-card .logo img {
+        margin-top: 0.9rem;
+    }
+    .login-card {
+        margin-top: 20px;
+    }
+     /** End Login page **/
+
+}
+ @media (max-width: 800px) {
+table>thead{
+         display: none;
+    }
+table>tbody>tr{
+         border-bottom: #fff 1px solid !important;
+         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+         margin-bottom: 2px;
+         display: block;
+    }
+table>tbody>tr>td{
+         border: 0 !important;
+         border-bottom-width: medium;
+         border-bottom-style: none;
+         border-bottom-color: currentcolor;
+         border-bottom: 1px solid #eee;
+         position: relative;
+         padding-left: 50% !important;
+         white-space: normal;
+         text-align: left !important;
+         display: block;
+         min-height: 1em;
+         font-size: 0.75rem;
+         padding: 0.5rem 0.6rem;
+    }
+table>tbody>tr>td::before{
+         position: absolute;
+         left: 6px;
+         width: 45%;
+         padding-right: 10px;
+         -ms-word-wrap: break-word;
+         word-wrap: break-word;
+         text-align: left;
+         font-weight: bold;
+         content: attr(data-title);
+    }
+table>tbody>tr>td.action{
+         background: transparent;
+         padding: 0.5rem 0.6rem;
+    }
+table>tbody>tr>td.action span {
+         padding: 0;
+    }
+table>tbody>tr>td.action a {
+         float: none;
+         color: #3b75e3;
+    }
+table.table-border>tbody>tr>td.action a {
+         border-left:0;
+    }
+}
+ @media (max-width: 991px) {
+    /** Menu **/
+     .navbar-expand-lg .container-fluid{
+         padding: 0 15px;
+    }
+     .navbar-collapse.megamenu-collapse{
+         position: fixed !important;
+         padding: 0.9375rem;
+         width: 100%;
+         height: 100%;
+         top:0;
+         right: -100%;
+         list-style: none;
+         background-color: #3E3C5A;
+         z-index: 1031;
+         opacity: 0;
+         overflow-y: auto;
+         -webkit-overflow-scrolling: touch;
+         -webkit-transition: all 0.28s ease-out;
+         transition: all 0.28s ease-out;
+         -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
+    }
+     .navbar-collapse.megamenu-collapse.show{
+         opacity: 1;
+         right: 0;
+    }
+     .md-menu{
+         padding-left: 0;
+         padding-right: 0;
+    }
+     .md-menu .menu-logo img{
+         max-height: 2rem;
+    }
+     .mainmenu .navbar-nav .md-menu a{
+         padding: 0 !important;
+    }
+     .mainmenu .navbar-nav .md-menu{
+         margin: 0 0 1rem;
+         padding: 0;
+    }
+     .mainmenu .navbar-nav a.dropdown-toggle:after{
+         display: none;
+    }
+     .megamenu .dropdown.megamenu-fw{
+         position: relative !important;
+    }
+     .megamenu-collapse .dropdown-item ul li a, .megamenu .dropdown-item li a {
+         min-height: 1.5rem;
+         line-height: 1.5rem;
+    }
+    .mainmenu .navbar-nav li a{
+        min-height: 2rem;
+        line-height: 2rem;
+    }
+     .mainmenu .navbar-nav li>a.active::before, .mainmenu .navbar-nav li a .caret {
+         display: none;
+    }
+     .megamenu .dropdown-menu.megamenu {
+         margin-top: 0rem;
+    }
+     .mainmenu .navbar-nav li>a.active::before, .mainmenu .navbar-nav li>a:hover::before, .mainmenu .navbar-nav li>div.dropdown>a:hover::before, .mainmenu .navbar-nav li .dropdown.show a.dropdown-toggle::before, .mainmenu .navbar-nav li > div.dropdown:hover > a::before{
+         display: none;
+    }
+    /** Menu End **/
+    /** Title **/
+     .element-wrapper .element-title {
+         margin-bottom: 0.5rem;
+         padding-right: 1.6rem;
+    }
+     .nav.smaller.nav-pills .nav-link {
+         margin-bottom: 0.2rem;
+    }
+    /** Title End **/
+
+    /** Table **/
+    .filter-btn-group{
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+     /** Login page **/
+    .login-card .form-group {
+        width: 85%;
+    }
+    .login-card-layout {
+        left: -10px;
+    }
+
+}
+/** Medium devices (tablets, 768px and up) **/
+ @media (min-width: 577px) and (max-width: 768px) {
+}
+
+
+/** Large devices (desktops, 992px and up) **/
+ @media (min-width: 769px) and (max-width: 992px) {
+}
+/** Extra large devices (large desktops, 1200px and up) **/
+ @media (min-width: 1200px) {
+}
+
+

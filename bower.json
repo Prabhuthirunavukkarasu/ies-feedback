@@ -1,0 +1,40 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "PSG"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.psgsoftwaretechnologies.com",
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "jquery": "3.3.1",
+    "angular": "1.6.1",
+    "angular-ui-router": "0.3.1",
+    "flatpickr": "3.0.7",
+    "angular-flatpickr": "3.4.0",
+    "angular-ui-select": "^0.19.8",
+    "angular-sanitize": "1.6.1",
+    "moment": "^2.22.2",
+    "fullcalendar": "v3.5.1",
+    "angular-fullcalendar": "^1.0.0",
+    "angular-ui-tinymce": "^0.0.19",
+    "ZingChart-AngularJS": "zingchart-angularjs#^1.2.0",
+    "angular-progress-arc": "^1.0.0",
+    "ng-tags-input": "^3.2.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "moment-timezone": "^0.5.13",
+    "moment": "^2.18.1",
+    "jquery": "2.2.4",
+    "angular": "1.6.9"
+  }
+}

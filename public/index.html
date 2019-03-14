@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         
+    <html class="ie9 no-focus" data-ng-app="app" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-focus" data-ng-app="ies" lang="en">
+<!-- ng-app="ies" -->
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Project</title>
+
+    <meta name="description" content="Webinifinity 2.0">
+    <meta name="author" content="Anand Sonachalam">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Font Awesome Icons -->
+    <link href="fonts/css/fontawesome-all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap and Main CSS -->
+    <link rel="stylesheet" id="css-bootstrap" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" id="flatpickr" href="bower_components/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Angular UI Selectbox -->
+    <link rel="stylesheet" id="uiselect" href="bower_components/angular-ui-select/dist/select.min.css">
+
+    <!-- Angular Tags Input -->
+    <link rel="stylesheet" id="tagsinput" href="bower_components/ng-tags-input/ng-tags-input.css">
+
+    <!-- Animation CSS -->
+    <link rel="stylesheet" id="animation" href="css/animate.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" id="layout" href="css/layout.css">
+    <link rel="stylesheet" id="components" href="css/components.css">
+    <link rel="stylesheet" id="colors" href="css/colors.css">
+    <link rel="stylesheet" id="responsive" href="css/responsive.css">
+    <!-- END Stylesheets -->
+
+</head>
+
+<body data-ng-controller="AppCtrl">
+    <!-- Page Container -->
+    <div class="container-fluid" id="page-container">
+
+        <!-- Header -->
+        <header data-ng-include="'app/modules/baseHtml/base_header.html'" id="header-navbar"
+            class="navbar navbar-expand-lg megamenu fixed-top mainmenu"></header>
+
+        <!-- Main Container -->
+        <main id="main-container" window-height data-autoscroll="true" data-ui-view></main>
+
+        <!-- Footer -->
+        <footer data-ng-include="'app/modules/baseHtml/base_footer.html'" id="footer" class="footer"></footer>
+    </div>
+    <!-- END Page Container -->
+
+    <!-- JS Code -->
+
+    <!-- Core JS: jQuery & Bootstrap Related -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core JS: AngularJS Related -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <!-- Flatpickr JS -->
+    <script src="bower_components/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="bower_components/angular-flatpickr/dist/ng-flatpickr.js"></script>
+
+    <!-- Angular UI Selectbox -->
+    <script src="bower_components/angular-ui-select/dist/select.min.js"></script>
+
+    <!-- Angular Full Calendar -->
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="bower_components/angular-fullcalendar/dist/angular-fullcalendar.min.js"></script>
+
+    <!-- Angular ZingChart -->
+    <script type="text/javascript" src="bower_components/zingchart/client/zingchart.min.js"></script>
+    <script type="text/javascript" src="bower_components/ZingChart-AngularJS/src/zingchart-angularjs.js"></script>
+
+    <!-- TinyMCE Rich Text Editor -->
+    <script type="text/javascript" src="bower_components/tinymce/tinymce.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+
+    <!--Angular Tags Input-->
+    <script type="text/javascript" src="bower_components/ng-tags-input/ng-tags-input.js"></script>
+
+    <!-- Angular Progress Arc -->
+    <script type="text/javascript" src="bower_components/angular-progress-arc/angular-progress-arc.min.js"></script>
+
+    <!-- angular pagination -->
+    <script type="text/javascript" src="bower_components/angular-paging/dist/paging.js"></script>
+    <script type="text/javascript" src="bower_components/angular-paging/dist/paging.min.js"></script>
+
+    <!-- Core JS: App Related -->
+    <script src="dist/project.js"></script>
+
+    <!-- End JS Code -->
+</body>
+
+</html>

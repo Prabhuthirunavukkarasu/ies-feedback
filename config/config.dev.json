@@ -1,0 +1,52 @@
+{
+    "serverConfig": {
+        "maintenanceMode": false,
+        "behindHttps": false
+    },
+    "timeZoneConfig": {
+        "hoursOffset": 5,
+        "minsOffset": 30
+    },
+    "dbConfig": {
+        "url": "mongodb://localhost:27017/psg-feedbacks"
+    },
+    "entitiesRemoteUrl": {
+        "sisStudentsSearch": "http://laudea.psgcas.ac.in/sis/students/filter",
+        "facultiesSearch": "http://laudea.psgcas.ac.in/fis/faculties/search",
+        "facultiesInDepartment": "http://laudea.psgcas.ac.in/fis/faculties/departmentName",
+        "currentAcademicYear": "http://laudea.psgcas.ac.in/courses/academicTerms/getCurrentAcademicYear",
+        "departmentEventList": "http://laudea.psgcas.ac.in/events/events/getAllEventListWithProjection",
+        "nodeSearch": "http://laudea.psgcas.ac.in/groups/groups/getSelectedNodesWithProjection",
+        "getMembers": "http://laudea.psgcas.ac.in/groups/members/getMembersForNode"
+    },
+    "logConfig": {
+        "httpRequestLog": {
+            "fname": "httpRequest.log",
+            "rfsOptions": {
+                "size": "10M",
+                "interval": "1d",
+                "compress": "gzip"
+            },
+            "format": ":remote-addr - :remote-user :date[clf] ':method :url HTTP/:http-version' :status :res[content-length] :response-time ':referrer' ':user-agent'"
+        },
+        "appLog": {
+            "streamConfig": {
+                "type": "rotating-file",
+                "fname": "app.log",
+                "period": "1d",
+                "count": 7,
+                "level": "debug"
+            }
+        },
+        "smsLog": {
+            "fname": "sms.%d-%b-%y.%N.log",
+            "period": "1d",
+            "totalFiles": 30,
+            "rotateExisting": false,
+            "threshold": "10m",
+            "totalSize": "50m",
+            "gzip": true
+        },
+        "baseUrl": "http://laudea.psgcas.ac.in/"
+    }
+}
