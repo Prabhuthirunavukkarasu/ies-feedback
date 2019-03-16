@@ -1,5 +1,5 @@
 var feedbackDao = require('../daos/feedbackDao');
-
+var submittedFeedsDao = require('../daos/submittedFeedsDao');
 module.exports = {
 
     createFeedback: function (feedback, callback) {
@@ -72,6 +72,28 @@ module.exports = {
                         feed.feedbackInfo.feedbackJson = metadata;
                     });
                 })
+                callback(null, res);
+            }
+            else {
+                callback(err, null);
+            }
+        });
+    },
+
+    saveFeedback: function (feedback, callback) {
+        submittedFeedsDao.create(feedback, function (err, res) {
+            if (!err) {
+                callback(null, res);
+            }
+            else {
+                callback(err, null);
+            }
+        });
+    },
+
+    getSubmittedFeedbacks: function (callback) {
+        submittedFeedsDao.getAll(function (err, res) {
+            if (!err) {
                 callback(null, res);
             }
             else {

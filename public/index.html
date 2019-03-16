@@ -45,6 +45,9 @@
 </head>
 
 <body data-ng-controller="AppCtrl">
+
+    <script type="text/javascript" src="vendor/keycloak.js"></script>
+
     <!-- Page Container -->
     <div class="container-fluid" id="page-container">
 
@@ -61,6 +64,7 @@
     <!-- END Page Container -->
 
     <!-- JS Code -->
+    <script type="text/javascript" src="auth/config"></script>
 
     <!-- Core JS: jQuery & Bootstrap Related -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -97,11 +101,9 @@
     <!-- Angular Progress Arc -->
     <script type="text/javascript" src="bower_components/angular-progress-arc/angular-progress-arc.min.js"></script>
 
-    <!-- angular pagination -->
-    <script type="text/javascript" src="bower_components/angular-paging/dist/paging.js"></script>
-    <script type="text/javascript" src="bower_components/angular-paging/dist/paging.min.js"></script>
 
     <!-- Core JS: App Related -->
+    <script src="app/scripts/login.js"></script>
     <script src="dist/project.js"></script>
 
     <!-- End JS Code -->

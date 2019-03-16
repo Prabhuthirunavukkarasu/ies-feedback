@@ -31,6 +31,19 @@ router.get('/getFeedback',function(req,res){
     });
 })
 
+router.post('/submitFeedback', function (req, res, next) {
+    feedbackService.saveFeedback(req.body.responseInfo, function (err, response) {
+        if (!err) {
+            appLogger.info("Successfully submitted");
+            res.send(response);
+        }
+        else {
+            appLogger.error("Failed to create feedback");
+            res.status(500).send({ name: err.name, message: err.message });
+        }
+    });
+})
+
 router.get('/getFeedbackForMobile',function(req,res){
     feedbackService.getFeedbackForMobile(function (err, response) {
         if (!err) {
@@ -43,6 +56,19 @@ router.get('/getFeedbackForMobile',function(req,res){
         }
     });
 })
+
+router.get('/getSubmittedFeedbacks/fetch', function (req, res, next) {
+    feedbackService.getSubmittedFeedbacks(function (err, response) {
+        if (!err) {
+            appLogger.info("Successfully fetched all student feedbacks");
+            res.send(response);
+        }
+        else {
+            appLogger.error("Failed to get feedbacks");
+            res.status(500).send({ name: err.name, message: err.message });
+        }
+    });
+});
 
 router.post('/getSelectedNodes', function (req, res) {
     var client = new Client();

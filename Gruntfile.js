@@ -13,7 +13,7 @@ module.exports = function (grunt) {
                 sourceMap: false
             },
             dist: {
-                src: ['public/app/scripts/<%= pkg.name%>.js', 'public/app/scripts/**/*.js'],
+                src: ['public/app/scripts/<%= pkg.name%>.js', 'public/app/scripts/**/*.js','!public/app/scripts/login.js'],
                 dest: 'public/dist/<%= pkg.name%>.js'
             }
         },
